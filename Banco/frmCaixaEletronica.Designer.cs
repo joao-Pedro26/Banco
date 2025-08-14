@@ -160,6 +160,7 @@
             this.numLimiteCredito.Size = new System.Drawing.Size(182, 26);
             this.numLimiteCredito.TabIndex = 8;
             this.numLimiteCredito.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.numLimiteCredito.Validating += new System.ComponentModel.CancelEventHandler(this.numLimiteCredito_Validating);
             // 
             // lblLimite
             // 

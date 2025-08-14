@@ -54,5 +54,10 @@ namespace Banco
             MessageBox.Show("Depósito realizado com sucesso", "Sucesso", MessageBoxButtons.OK);
 
         }
+
+        private void numLimiteCredito_Validating(object sender, CancelEventArgs e)
+        {
+            conta.LimiteCredito = numLimiteCredito.Value;
+        }
     }
 }
