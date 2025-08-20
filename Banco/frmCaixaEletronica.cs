@@ -44,6 +44,11 @@ namespace Banco
                                 MessageBoxIcon.Error);
             
             }
+            finally
+            {
+                AtualizaSaldoLimite();
+
+            }
 
         }
 
@@ -58,6 +63,7 @@ namespace Banco
         private void numLimiteCredito_Validating(object sender, CancelEventArgs e)
         {
             conta.LimiteCredito = numLimiteCredito.Value;
+            AtualizaSaldoLimite();
         }
     }
 }
