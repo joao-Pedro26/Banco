@@ -54,12 +54,21 @@
     <Compile Include="frmCaixaEletronica.Designer.cs">
       <DependentUpon>frmCaixaEletronica.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPix.Designer.cs">
+      <DependentUpon>frmPix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Funcionario.cs" />
     <Compile Include="LancamentoPix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCaixaEletronica.resx">
       <DependentUpon>frmCaixaEletronica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPix.resx">
+      <DependentUpon>frmPix.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

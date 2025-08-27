@@ -26,7 +26,7 @@ namespace Banco
             get { return tipoLancamento; }
             set
             {
-                if (value == 'D' || value == 'C')
+                if (value == 'D' || value == 'C' || value == 'd' || value == 'c')
                     tipoLancamento = value;
                 else
                     throw new ArgumentException("Tipo de lançamento inválido. Use 'D' para débito ou 'C' para crédito.");
@@ -61,14 +61,15 @@ namespace Banco
             }
         }
 
-        public String ComprovantePix()
+        public string ComprovantePix()
         {
-            String Texto;
+            string Texto;
             Texto = $"Data/Hora: {dataHoraLacamento}\n" +
-                    $"Tipo: {(tipoLancamento == 'D' ? "Débito" : "Crédito")}\n" +
+                    $"Tipo: {(tipoLancamento == 'D' || tipoLancamento == 'd' ? " Débito" : " Crédito")}\n" +
                     $"Valor: {valorLancamento:C}\n" +
                     $"Pessoa: {pessoa}\n" +
                     $"Mensagem: {mensagem}";
+            return Texto;
         }
     }
 }

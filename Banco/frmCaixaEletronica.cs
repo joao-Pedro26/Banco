@@ -17,7 +17,7 @@ namespace Banco
         {
             InitializeComponent();
             conta.LimiteCredito = 1000;
-            conta.Saldo = 5000; // Inicializando o saldo da conta   
+            conta.Saldo = 5000; 
             AtualizaSaldoLimite();
         }
 

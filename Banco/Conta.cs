@@ -17,7 +17,6 @@ namespace Banco
 
         private decimal contadorConta = 0;
 
-        // Criação das propriedades da Classe referentes aos atributos internos
         public Int32 Numero
         {
             get { return numero; }
@@ -64,7 +63,6 @@ namespace Banco
         }
 
 
-        // Método construtor da Classe Conta
 
     }
 }
